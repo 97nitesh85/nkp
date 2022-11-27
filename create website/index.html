@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px;
+            padding: 0px;
+            font-size: 20px;
+            background: url('img/01.jpg');
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 21px;
+            left: 7px;
+            padding: 3px;
+            text-align: center;
+        }
+        .mid{
+            display: block;
+            width: 400px;
+            margin: 15px auto;
+            /* border: 2px solid rgb(0, 255, 34); */
+        }
+        .right{
+            padding: 3px;
+            position: absolute;
+            top: 15px;
+            right: 7px;
+            /* border: 2px solid rgb(179, 0, 255); */
+        }
+        ul li{
+            display: inline-block;
+            padding: 3px 4px 0px 4px;
+            margin: 10px;
+        }
+        ul{
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        .left img{
+            width: 134px;
+        }
+        .border{
+            /* border: 2px solid rgb(179, 0, 255); */
+        }
+        .btn{
+            padding: 0px 5px;
+            border-radius: 5px;
+            border: none;
+            border: 1px solid #b08504;
+            background-color: #f0ba18;
+            margin: 0px 6px;
+            font-family: 'Baloo Bhai', cursive;
+            font-size: 18px;
+        }
+        .btn:hover{
+            background-color: black;
+            color: #f0ba18;
+            transition: 0.15s;
+            transform: scale3d(1.2,1.2,1.2);
+        }
+        ul li:hover{
+            /* color: #f0ba18; */
+            transition: 0.2s;
+            cursor: pointer;
+            transform: scale3d(1.2,1.2,1.2);
+            background-color: #ffeaac;
+            border-radius: 10px;
+            border: 1px solid #f0ba18;
+        }
+        .left img:hover{
+            transition: 0.4s;
+            transform: scale3d(1.1,1.1,1.1);
+        }
+        .container{
+            border: 3px solid #f0ba18;
+            /* padding: 10px; */
+            display: block;
+            width: 650px;
+            text-align: center;
+            margin: 20px 40px;
+            position: relative;
+            top: 50px;
+            border-radius: 10px;
+            height: 430px;
+            background-color: #fff7d9;
+        }
+       .input{
+        background-color: #fff2c8e0;
+        font-size: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        width: 500px;
+        padding: 5px;
+        border: 2px solid rgb(255, 162, 0);
+       }
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left border">
+            <img src="img/img.png" alt="">
+            <!-- <div>NKP Store</div> -->
+        </div>
+        <div class="mid border">
+            <ul class="navbar">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>PRICING</li>
+                <li>OFFER</li>
+            </ul>
+        </div>
+        <div class="right border">
+            <button class="btn">My Orders</button>
+            <button class="btn">Profile</button>
+        </div>
+    </header>
+    <div class="container">
+       <h2>Discount 60% HURRY UP!</h2>
+       <form action="nitesh.php" class="form">
+        <input class="input" type="text" placeholder="Enter Your Name">
+        <br>
+        <input class="input" type="text" placeholder="Enter Your city">
+        <br>
+        <input class="input" type="text" placeholder="Enter Your Pincode">
+        <br> 
+        <input class="input" type="text" placeholder="Enter Your Gender">
+        <br>
+        <input class="input" type="text" placeholder="Enter Your Gender">
+        <!-- <br>
+        <input class="input" type="text" placeholder="Enter Your Gender"> -->
+       </form>
+    </div>
+</body>
+</html>
